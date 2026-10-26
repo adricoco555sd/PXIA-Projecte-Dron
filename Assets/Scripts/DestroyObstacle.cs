@@ -2,15 +2,9 @@ using UnityEngine;
 
 public class DestroyObstacleNewMonoBehaviourScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        Destroy(gameObject, 4f);
-    }
+    private float _lifetime = 4f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void Start() {
+        Destroy(gameObject, _lifetime);
     }
 }

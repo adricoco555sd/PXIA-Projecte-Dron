@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 5764945261052697431}
   - component: {fileID: 4247938146566323982}
   - component: {fileID: 300430504398528642}
+  - component: {fileID: -1747165762344295975}
   - component: {fileID: 3721630028745012482}
+  - component: {fileID: 820033020041121435}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Obstacle
@@ -29,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1671418555905062739}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 2.47}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -113,6 +115,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-1747165762344295975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671418555905062739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec574814a41c99148bb38770b6a9e4ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!114 &3721630028745012482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,3 +139,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c146bccec945ce04995ffac5ada64c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyObstacleNewMonoBehaviourScript
+--- !u!114 &820033020041121435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671418555905062739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ad1e6ac3c5088e49afa1a2cbcba47c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObstacleMovement
+  _speed: 5
